@@ -6,7 +6,17 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
+      },
+      keyframes: {
+        slideUp: {
+          from: { transform: "translateY(100%)", opacity: 0 },
+          to: { transform: "translateY(0)", opacity: 1 },
+        },
+      },
+    },
   },
   plugins: [],
   darkMode: 'class', // ensures dark mode is activated with class
