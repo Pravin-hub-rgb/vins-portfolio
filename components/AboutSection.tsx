@@ -77,7 +77,7 @@ const AboutSection: React.FC = () => {
               Hi, my name is <span className="font-bold">Pravin</span> and I am a{" "}
               <span className="font-bold">highly ambitious</span>,{" "}
               <span className="font-bold">self-motivated</span>, and{" "}
-              <span className="font-bold">driven</span> web developer based in{" "}
+              <span className="font-bold">driven</span> web developer from{" "}
               <span className="font-bold">Nainital, Uttarakhand</span>.
             </p>
             <br />
