@@ -19,7 +19,23 @@ const projects = [
     image: "/findmyroom.jpg",
     github: "https://github.com/Pravin-hub-rgb/find-my-room",
     link: "https://find-my-room-gold.vercel.app/",
-  }
+  },
+  {
+    name: "TradeStack",
+    description:
+      "TradeStack is a web application that automatically analyzes stock market data to identify trading opportunities based on predefined rules. It streams live market prices, runs technical analysis across thousands of stocks, and simulates trades with risk management — all displayed on a dashboard so users don't have to monitor charts manually.",
+    image: "/tradestack.png",
+    github: "https://github.com/Pravin-hub-rgb/TradeStack",
+    link: "https://github.com/Pravin-hub-rgb/TradeStack",
+  },
+  {
+    name: "DukaanOS",
+    description:
+      "DukaanOS is a full-stack Point-of-Sale and shop management system built for Indian kirana stores, handling daily billing, inventory tracking, credit (khata) management, and business reporting. It features an AI-powered voice billing pipeline using Groq API that lets shopkeepers complete transactions entirely in Hindi/Hinglish through speech, along with an offline-first architecture that ensures uninterrupted billing even without internet connectivity.",
+    image: "/shoppos.png",
+    github: "https://github.com/Pravin-hub-rgb/DukaanOS",
+    link: "https://dukaanos.vercel.app/",
+  },
 ]
 
 const ProjectsSection = () => {
@@ -36,7 +52,7 @@ const ProjectsSection = () => {
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col md:flex-row md:space-x-12">
-                  <div className="md:w-1/2">
+                  <div className="relative md:w-1/2">
                     <Link 
                       href={project.link} 
                       target="_blank"
@@ -50,9 +66,11 @@ const ProjectsSection = () => {
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
                     </Link>
+                    <h1 className="absolute top-4 left-1/2 -translate-x-1/2 text-3xl lg:text-4xl font-bold text-white bg-black/40 px-4 py-2 rounded whitespace-nowrap">
+                      {project.name}
+                    </h1>
                   </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                  <div className="md:w-1/2">
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
